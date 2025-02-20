@@ -56,6 +56,10 @@ public class StudentRestController {
 		this.jwtTokenUtil = jwtTokenUtil;
 	}
 
+	
+	//UPDATE student5 SET is_Admin = true WHERE email = 'Pdipankar28@gmail.com'; first time
+
+	
 	@PostMapping("/auth/send-otp")
 	public ResponseEntity<?> sendOtp(@RequestParam String email) {
 		try {
